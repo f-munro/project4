@@ -1,0 +1,18 @@
+{% extends "network/layout.html" %} {% load static %} {% block body %}
+<div class="col-sm-8 justify-content-center mx-auto">
+  <div id= "profile-view" class="col-sm-6 mx-auto text-center">
+    <div class="user">{{user.username}}</div>
+    <div>Followers:<span id="followers">{{user.following.count }}</span></div>
+    <div>Following: <span id="following">{{user.following.count }}</span></div>
+  </div>
+</div>
+
+{% if user != request.user %}
+<button class="btn btn-primary" id="follow-btn"></button>
+{% endif %}
+
+<div id="posts-view" class="col-sm-8 mx-auto"></div>
+<div id="page-buttons" class="d-flex justify-content-center my-3"></div>
+{% endblock %} {% block script %}
+<script src="{% static 'network/index.js' %}"></script>
+{% endblock %}

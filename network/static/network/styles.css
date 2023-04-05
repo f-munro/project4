@@ -1,0 +1,69 @@
+.navbar {
+  background-color: #cfe2ff;
+}
+
+.navbar-brand {
+  color: #013c93;
+}
+
+@keyframes showPost {
+  0% {
+    opacity: 0;
+    height: 0%;
+  }
+  100% {
+    opacity: 1;
+    height: 100%;
+  }
+}
+
+@keyframes showButtons {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.compose-form {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.compose-content {
+  border: 2px solid rgb(190, 190, 190);
+  border-radius: 5px;
+}
+
+.card {
+  animation-name: showPost;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-play-state: paused;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card-body {
+  background-color: white;
+}
+
+.card-header {
+  background-color: rgb(38, 125, 253);
+}
+
+.profile-div {
+  border: 2px solid rgb(190, 190, 190);
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.profile-name {
+  color: #013c93;
+}
+
+#page-buttons {
+  animation-name: showButtons;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-play-state: paused;
+}

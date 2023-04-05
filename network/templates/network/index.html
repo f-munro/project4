@@ -1,0 +1,24 @@
+{% extends "network/layout.html" %} {% load static %} {% block body %}
+<div class="container-flex">
+  <div class="row py-4">
+    <div class="col alert-col m-3"></div>
+    <div class="col-sm-4">
+      <div id="compose-view" class="mx-auto mb-4">
+        <form class="compose-form">
+          <textarea class="compose-content form-control" rows="4"
+            placeholder="Write a new post..."></textarea>
+          <input type="submit" id="submit" class="btn btn-outline-primary col-sm-12" value="Post"/>
+        </form>
+      </div>
+      <div id="profile-view" class="justify-content-center mx-auto"></div>
+      <div id="posts-view" class="mx-auto"></div>
+      <div id="buttons-view">
+      </div>
+    </div>
+    <div class="col"></div>
+  </div>
+</div>
+
+{% endblock %} {% block script %}
+<script src="{% static 'network/index.js' %}"></script>
+{% endblock %}
