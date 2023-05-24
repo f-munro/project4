@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     }
     return cookieValue;
-  }
+  };
 
   // Create the HTML to represent a post and append to the DOM
   function add_post(post) {
